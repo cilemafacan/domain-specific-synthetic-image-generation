@@ -1,4 +1,8 @@
 .DS_Store
+*.png
+*.tif
+datasets/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
