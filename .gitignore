@@ -1,8 +1,5 @@
 .DS_Store
-*.png
 *.tif
-datasets/
-test*
 *.pkl
 
 # Byte-compiled / optimized / DLL files
