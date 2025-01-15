@@ -1,5 +1,4 @@
 # TR
------
 # Klasik DCGAN ve Manipüle Edilmiş GAN ile Sentetik Veri Üretimi
 
 ## 1. Proje Tanımı ve Amaçlar
@@ -32,9 +31,9 @@ Bu proje, Google Path Foundation modelini kullanarak histopatoloji görüntüler
 | Görüntü Boyutu            | 224          | 224                   |
 | Kanal Sayısı              | 3            | 3                     |
 | Latent Vektör Boyutu      | 100          | 100                   |
-| Epoch Sayısı              | 10            | 10                    |
+| Epoch Sayısı              | 10           | 10                    |
 | Öğrenme Hızı              | 0.0002       | 0.0002                |
-| Beta1                    | 0.5          | 0.5                   |
+| Beta1                     | 0.5          | 0.5                   |
 
 ## 3. Model Mimarileri ve Eğitim Süreci
 
@@ -45,8 +44,8 @@ Bu proje, Google Path Foundation modelini kullanarak histopatoloji görüntüler
 
 <table>
     <tr style="vertical-align: top">
-        <td><img src="./dcgan_outputs/arch/dcgan_generator_graph_highdpi.png"></td>
-        <td><img src="./dcgan_outputs/arch/dcgan_discriminator_graph_highdpi.png"></td>
+        <td><img src="./dcgan_outputs/arch/dcgan_generator_graph_highdpi.png" width="200"></td>
+        <td><img src="./dcgan_outputs/arch/dcgan_discriminator_graph_highdpi.png" width="200"></td>
     </tr>
 </table>
 
@@ -57,8 +56,8 @@ Bu proje, Google Path Foundation modelini kullanarak histopatoloji görüntüler
 
 <table>
     <tr style="vertical-align: top">
-        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_generator_graph_highdpi.png"></td>
-        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_discriminator_graph_highdpi.png"></td>
+        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_generator_graph_highdpi.png" width="200"></td>
+        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_discriminator_graph_highdpi.png" width="200"></td>
     </tr>
 </table>
 
@@ -88,10 +87,7 @@ Eğitim süresince kaydedilen `Loss_D` ve `Loss_G` değerleri aşağıda grafikl
   - Gelişmiş Generator ve Discriminator modelleri geliştirilebilir.
 
 ---
-
 # EN
------
-
 # Synthetic Data Generation with Classic DCGAN and Modified GAN
 
 ## 1. Project Description and Objectives
