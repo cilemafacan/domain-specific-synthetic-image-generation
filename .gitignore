@@ -4,6 +4,7 @@
 *.pth
 *frame*
 *.png
+visualize*
 
 
 # Byte-compiled / optimized / DLL files
