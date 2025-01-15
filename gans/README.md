@@ -42,13 +42,6 @@ Bu proje, Google Path Foundation modelini kullanarak histopatoloji görüntüler
 
 **Discriminator**: Birden fazla `Conv2d`, `BatchNorm2d`, ve `LeakyReLU` katmanı içerir. Çıkış katmanı `Sigmoid` aktivasyon fonksiyonu ile sonuç verir.
 
-<table>
-    <tr style="vertical-align: top">
-        <td><img src="./dcgan_outputs/arch/dcgan_generator_graph_highdpi.png" width="200"></td>
-        <td><img src="./dcgan_outputs/arch/dcgan_discriminator_graph_highdpi.png" width="200"></td>
-    </tr>
-</table>
-
 ### 3.2 Embedding GAN Modeli
 **Generator**: DCGAN modeliyle aynı mimariye sahiptir.
 
@@ -56,10 +49,20 @@ Bu proje, Google Path Foundation modelini kullanarak histopatoloji görüntüler
 
 <table>
     <tr style="vertical-align: top">
-        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_generator_graph_highdpi.png" width="200"></td>
-        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_discriminator_graph_highdpi.png" width="200"></td>
+        <th>DCGAN - Generator</th>
+        <th>DCGAN - Discriminator</th>
+        <th>Embedding ile GAN - Generator</th>
+        <th>Embedding ile GAN - Discriminator</th>
+    </tr>
+    <tr style="vertical-align: top">
+        <td><img src="./dcgan_outputs/arch/dcgan_generator_graph_highdpi.png"></td>
+        <td><img src="./dcgan_outputs/arch/dcgan_discriminator_graph_highdpi.png"></td>
+        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_generator_graph_highdpi.png"></td>
+        <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_discriminator_graph_highdpi.png"></td>
     </tr>
 </table>
+
+
 
 ## 4. Sonuçlar ve Gözlemler
 
@@ -135,14 +138,6 @@ This project aims to generate meaningful embedding vectors from histopathology i
 
 **Discriminator**: Contains multiple `Conv2d`, `BatchNorm2d`, and `LeakyReLU` layers. The output layer gives the result with the `Sigmoid` activation function.
 
-<table>
-    <tr style="vertical-align: top">
-        <td><img src="./dcgan_outputs/arch/dcgan_generator_graph_highdpi.png"></td>
-        <td><img src="./dcgan_outputs/arch/dcgan_discriminator_graph_highdpi.png"></td>
-    </tr>
-
-</table>
-
 ### 3.2 Embedding GAN Model
 **Generator**: Has the same architecture as the DCGAN model.
 
@@ -150,11 +145,19 @@ This project aims to generate meaningful embedding vectors from histopathology i
 
 <table>
     <tr style="vertical-align: top">
+        <th>DCGAN - Generator</th>
+        <th>DCGAN - Discriminator</th>
+        <th>GAN with Embedding - Generator</th>
+        <th>GAN with Embedding - Discriminator</th>
+    </tr>
+    <tr style="vertical-align: top">
+        <td><img src="./dcgan_outputs/arch/dcgan_generator_graph_highdpi.png"></td>
+        <td><img src="./dcgan_outputs/arch/dcgan_discriminator_graph_highdpi.png"></td>
         <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_generator_graph_highdpi.png"></td>
         <td><img src="./dcgan_with_embeddings_outputs/arch/embedding_discriminator_graph_highdpi.png"></td>
     </tr>
-
 </table>
+
 
 ## 4. Results and Observations
 
