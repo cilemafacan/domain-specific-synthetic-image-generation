@@ -5,6 +5,8 @@
 *frame*
 visualize*
 *.pdf
+diffusion/histopathology-diffusion_1
+diffusion/my-diffusion-model
 
 
 # Byte-compiled / optimized / DLL files
