@@ -5,9 +5,7 @@
 *frame*
 visualize*
 *.pdf
-diffusion/histopathology-diffusion_1
-diffusion/my-diffusion-model
-
+*histopathology-diffusion*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
