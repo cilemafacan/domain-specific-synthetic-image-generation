@@ -8,7 +8,7 @@ class CustomDatasetFromSlide(Dataset):
         self.dataset = dataset
         self.transform = transform
         self.slide_dir = slide_dir
-        self.cache = []
+        self.cache = {}  # Slide dosyalarını burada saklayacağız
 
     def __len__(self):
         return len(self.dataset)
@@ -18,15 +18,21 @@ class CustomDatasetFromSlide(Dataset):
         y = self.dataset[idx]["y"]
         patch_size = self.dataset[idx]["patch_size"]
         slide_name = self.dataset[idx]["slide_name"]
-        path = os.path.join(self.slide_dir, slide_name)
-        if path not in self.cache:
-            self.cache.append(path)
-            self.slide = ops.OpenSlide(path)
-        image = self.slide.read_region((x, y), 0, patch_size).convert("RGB")
+        slide_path = os.path.join(self.slide_dir, slide_name)
+
+        # Cache kontrolü
+        if slide_path not in self.cache:
+            self.cache[slide_path] = ops.OpenSlide(slide_path)
+        
+        slide = self.cache[slide_path]  # Cache'ten slide al
+        image = slide.read_region((x, y), 0, patch_size).convert("RGB")
+
         if self.transform:
             image = self.transform(image)
+
         embedding = self.dataset[idx]["embedding_vector"]
         embedding = torch.tensor(embedding, dtype=torch.float32)
+
         return {"image": image, "embedding": embedding}
     
 
