@@ -5,6 +5,7 @@
 *.pth
 *frame*
 visualize*
+thumbnails*
 *.pdf
 *histopathology-diffusion*
 
